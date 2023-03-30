@@ -6,7 +6,7 @@ const modal = (props) => {
     const cssClass = ['Modal', props.show ? 'ModalOpen' : 'ModalClosed'];
 
   return (
-    <div className={cssClass}>
+    <div className={cssClass.join(' ')}>
       <h1>A Modal</h1>
       <button className='Button' onClick={props.closed}>
         Dismiss
